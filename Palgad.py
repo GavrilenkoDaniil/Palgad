@@ -1,36 +1,16 @@
-from funktsioonid import *
-palgad=[1200,2500,750,395,1200]
-inimesed=["A","B","C","D","E"]
+﻿from modul import *
 
-
-
-
-
-
-#3
-def suurim_palk(i:list,p:list):
-    """
-    :rtype float,str:
-    """
-    suurim=max(p)
-    b=p.index(suurim)
-    kellel=i[b]
-    return suurim,kellel
-
-#10
-def keskmine(i,p):
-    """
-    :rtype var:
-    """
-    summa=0
-    for palk in p:
-        summa+=palk
-    kesk=summa/len(p)
-    print(kesk)
-    vahe=0
-    if 0<=p.index(kesk)<len(p)-1:
-        kes=i[p.index(kesk)]
-        return kesk
-    else:
-        kesk="Puudub"
-        return kesk
+while True:
+	a=input("lisa-1, kastuta-2, suurim palk-3, vähim palk-4, otsing-5")
+	if a=="1":
+		ad()
+	elif a=="2":
+		kustuta()
+	elif a=="3":
+		suurimpalk()
+	elif a=="4":
+		vaiksempalk
+	elif a=="5":
+		otsi()
+	else:
+		print("Sisesta number 1-5")
