@@ -1,4 +1,4 @@
-﻿def spisok():
+﻿def spisok()->list:
 	"""Из файла делаем список
 	"""
 	palgad=[]
@@ -35,8 +35,8 @@ def kustuta():
 			ad() #функция добавления человека в список
 	else:
 		b=inimesed.index(nimi) #поиск индекса человека
-		inimesed.pop(a) #удаляем по индексу
-		palgad.pop(a) #удаляем по индексу
+		inimesed.pop(b) #удаляем по индексу
+		palgad.pop(b) #удаляем по индексу
 	f=open("inimesed.txt", "w")
 	for c in inimesed:
 		f.write(c+"\n")
@@ -52,8 +52,8 @@ def suurimpalk():
 	"""
 	palgad,inimesed=spisok()
 	suurim=max(palgad) #поиск самой большой
-	b=palgad.index(suurim) # приравниваем индекс к переменной
-	print("kõige suurim palga on" +inimesed[b])
+	suur=palgad.index(suurim) # приравниваем индекс к переменной
+	print("kõige suurim palga on " +inimesed[suur])
 
 #4
 def vaiksempalk():
@@ -64,7 +64,7 @@ def vaiksempalk():
 	palgadS.sort()
 	a=palgadS[0]
 	b=palgad.index(a)
-	print("kõige väiksem palga on "+inimesed[b]+" ja see on "+ palgadS[0]+" euro")
+	print("kõige väiksem palga on "+inimesed[b]+" ja see on "+palgadS[0]+" euro")
 
 #5
 def otsi():

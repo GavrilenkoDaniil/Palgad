@@ -1,7 +1,7 @@
 ﻿from modul import *
 
 while True:
-	a=input("lisa-1, kastuta-2, suurim palk-3, vähim palk-4, otsing-5")
+	a=input("lisa-1, kustuta-2, suurim palk-3, vaiksem palk-4, otsing-5: ")
 	if a=="1":
 		ad()
 	elif a=="2":
@@ -9,7 +9,7 @@ while True:
 	elif a=="3":
 		suurimpalk()
 	elif a=="4":
-		vaiksempalk
+		vaiksempalk()
 	elif a=="5":
 		otsi()
 	else:
